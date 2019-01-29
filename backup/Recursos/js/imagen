@@ -1,0 +1,33 @@
+//se carga la imagen del rompecabezas
+var Imagen = {
+
+configurarCanvas: function() {
+  var canvas = document.getElementById('mi-canvas');
+  var contexto = canvas.getContext('2d');
+},
+
+
+cargarImagen: function (e) {
+    //se calcula el ancho y el alto de las piezas de acuerdo al tamaño del canvas (600).
+    this.anchoPiezas = Math.floor(600 / this.cantidadDePiezasPorLado);
+    this.altoPiezas = Math.floor(600 / this.cantidadDePiezasPorLado);
+    //se calcula el ancho y alto del rompecabezas de acuerdo al ancho y alto de cada pieza y la cantidad de piezas por lado
+    this.anchoDeRompecabezas = this.anchoPiezas * this.cantidadDePiezasPorLado;
+    this.altoDeRompecabezas = this.altoPiezas * this.cantidadDePiezasPorLado;
+    this.configurarCanvas()
+  },
+
+  iniciarImagen = function() {
+      this.cargarImagen();
+      alert('entra a iniciar imagen');
+      var imagen = new Image();
+      this.imagen.onload = function() {
+  alert('imagen '+imagen);
+      contexto.drawImage(imagen,100,100,600,600);
+    };
+    imagen.src = 'images/rompecabezas.jpg';
+     }
+
+
+
+  }

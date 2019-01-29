@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  }/*Código armado por La Foca Loca S.A. No modificar*/
+
+
+
+body {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  width: 1000px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-color: #3e3939;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+li {
+  font-size: 0.8em;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #ff7517;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  width: 40%;
+  background: #e8e6e6;
+  padding: 25px;
+  color: #000;
+  border-radius: 20px;
+  border: 2px solid grey;
+}
+
+.col-60 {
+  width: 60%;
+  background: #3e3939;;
+}
+
+
+#cantidad-piezas-por-lado {
+ width: 40px;
+ height: 40px;
+ margin-left: 8px;
+ font-size: 1.3em;
+ font-weight: bolder;
+ color: #ff7517;
+ border: 0;
+ background-color: #e8e6e6;
+}
+
+#flecha{
+  font-size: 1.2em;
+  min-height: 1.2em;
+  margin-top: 8px;
+  width: 120px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+
+#juego #mi-canvas{
+  width: 600px;
+  height: 600px;
+}
+
+ #objetivo {
+   margin: 0;
+   width: 80px;
+   height: 80px;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+ }
+
+ #objetivo:hover {
+    width: 400px;
+    height: 400px;
+}
+
+.titulo {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  background-color: #3e3939;
+  color: #fd5f00;
+  border: 1px solid #5b594a;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+ .titulo-secundario {
+  font-size: 1em;
+  font-family: sans-serif ;
+  color: #1c1124;
+  border-bottom: 1px solid #ff7100;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.titulo-terciario {
+  font-size: 0.8em;
+  font-family:Arial, sans-serif;
+  animation: bounceIn 2s;
+  color: #2c2727;
+}
+
+#ultimo-mov {
+  width: 50%;
+  float: left;
+}
+
+ #mezclar {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #fd5f00;
+  color: #3e3939;
+  border: 1px solid #5b594a;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  margin-top: 0;
+  float: right;
+  text-align: center;
+}
+
+#movimientos-restantes {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: #fd5f00;
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+#cantidad-movimientos-restantes {
+  margin-right: 8px;
+  font-size: 2.3em;
+  font-weight: bolder;
+  color: #fd5f00;
+  float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#cartel-ganador {
+  position: absolute;
+  top: 2%;
+  right: 30%;
+  text-align: center;
+  font-size: 2.2em;
+  color: red;
+    }
+
+  @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
