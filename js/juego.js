@@ -331,7 +331,7 @@ Juego = {
   Juego.mezclar.addEventListener('click', function() {
     if ((Juego.facil.checked)||(Juego.intermedio.checked)||(Juego.dificil.checked)) {
       Juego.terminoDeMezclar = false;
-      var cantidadDeMezclas = Math.max(Math.pow(3,Juego.cantidadDePiezasPorLado)+30);
+      var cantidadDeMezclas = Math.max(Math.pow(4,Juego.cantidadDePiezasPorLado)+30);
       Juego.mezclarPiezas(cantidadDeMezclas);
       Juego.reiniciar();
     }else{
