@@ -20,7 +20,7 @@ Juego = {
   mezclar : document.getElementById('mezclar'),
   cantidadDePiezasPorLado : 3,
   cantidadMovimientosPermitidos: 0,
-  dificultad: " ",
+  dificultad: "facil",
   facil : document.getElementById('facil'),
   intermedio : document.getElementById('intermedio'),
   dificil : document.getElementById('dificil'),
