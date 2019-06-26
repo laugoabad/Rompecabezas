@@ -255,7 +255,7 @@ Juego = {
         }else{
           if (this.perdio) {
             setTimeout(function() {
-                Juego.mostrarCartelPerdio();
+                Juego.mostrarCartelPerdedor();
                 }, 500);
           }
         }
