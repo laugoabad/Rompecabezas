@@ -18,7 +18,7 @@
     var contador = 1;
     var imagen = new Image();
     imagen.src = 'images/escher2.jpg';
-    //Juego.piezas = new Array(Juego.cantidadDePiezasPorLado);
+    
     for (i=0; i<Juego.cantidadDePiezasPorLado; i++) {
       var xOriginal = 0;
       var xActual = 0;
@@ -61,6 +61,3 @@
       this.anchoDeRompecabezas = Pieza.anchoPiezas * Juego.cantidadDePiezasPorLado;
       this.altoDeRompecabezas = Pieza.altoPiezas * Juego.cantidadDePiezasPorLado;
     }
-
-
-  

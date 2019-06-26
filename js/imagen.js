@@ -39,6 +39,4 @@ configurarCanvas: function(idCanvas) {
           }
         }
       }
-
-
     }
